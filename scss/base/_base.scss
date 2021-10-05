@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 17% 83%;
+    grid-template-rows: 85% 15%;
+
+    grid-template-areas:
+    "menu catalog catalog catalog catalog"
+    "player player player player player"
+
+}

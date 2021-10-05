@@ -1,0 +1,11 @@
+{
+  "name": "spotify-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o css scss/main.scss -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
