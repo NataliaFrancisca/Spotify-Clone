@@ -1,0 +1,38 @@
+.about-music{
+    padding-left: .2rem;
+
+    &-items{
+        padding-left: 1rem;
+    }
+
+    &-item:first-child{
+
+        margin-bottom: .3rem;
+
+        a{
+            font-weight: 600;
+        }
+    }
+
+    &-link{
+        color: color(white-light);
+        text-decoration: none;
+        font-size: 1.2rem;
+
+        &:hover{
+            color: color(white-dark);
+        }
+    }
+
+}
+
+.icon-like-music{
+    padding-left: 2.2rem;
+    text-decoration: none;
+    color: color(white-light);
+
+
+    i{
+        font-size: 1.5rem;
+    }
+}

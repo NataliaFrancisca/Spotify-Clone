@@ -3,3 +3,24 @@
     justify-content: $justCont;
     align-items: $alignIte;
 }
+
+@mixin spanStyle($fontS: 1.2rem){
+    font-size: $fontS;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 550;
+}
+
+@mixin linkStyle($padding-left: 1rem){
+    color: color(white-light);
+    transition: color .2;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: $padding-left;
+}
+
+@mixin iconStyle{
+    font-size: 2rem;
+    display: flex;
+    align-self: center;
+}
