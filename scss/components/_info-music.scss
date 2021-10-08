@@ -1,31 +1,38 @@
-.about-music{
-    padding-left: .2rem;
+.player-music-info{
 
-    &-items{
-        padding-left: 1rem;
+    img{
+        height: 5rem;
+        width: 5rem;
+        object-fit: cover;
     }
 
-    &-item:first-child{
+    .about-music{
+        padding-left: .2rem;
 
-        margin-bottom: .3rem;
+        &-items{
+            padding-left: 1rem;
+        }
 
-        a{
-            font-weight: 600;
+        &-item:first-child{
+
+            margin-bottom: .3rem;
+
+            a{
+                font-weight: 600;
+            }
+        }
+
+        &-link{
+            color: color(white-light);
+            text-decoration: none;
+            font-size: 1.2rem;
+
+            &:hover{
+                color: color(white-dark);
+            }
         }
     }
-
-    &-link{
-        color: color(white-light);
-        text-decoration: none;
-        font-size: 1.2rem;
-
-        &:hover{
-            color: color(white-dark);
-        }
-    }
-
 }
-
 .icon-like-music{
     padding-left: 2.2rem;
     text-decoration: none;

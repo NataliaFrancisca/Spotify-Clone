@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -117,29 +120,83 @@
         <section class="player">
 
             <div class="player-music-info">
-
-            <img src="images/fogo-baianasystem-album.jpg" alt="">
-            
-                <div class="about-music">
-                    <ul class="about-music-items">
-                        <li class="about-music-item">
-                            <a href="" class="about-music-link">Fogo</a>
-                        </li>
-                        <li class="about-music-item">
-                            <a href="" class="about-music-link">BaianaSystem</a>
-                        </li>
-                    </ul>
-                </div>
-            
-            <a href="" class="icon-like-music"><i class="far fa-heart"></i></a>
-
+                <img src="images/fogo-baianasystem-album.jpg" alt="">
+                
+                    <div class="about-music">
+                        <ul class="about-music-items">
+                            <li class="about-music-item">
+                                <a href="" class="about-music-link">Fogo</a>
+                            </li>
+                            <li class="about-music-item">
+                                <a href="" class="about-music-link">BaianaSystem</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                <a href="" class="icon-like-music"><i class="far fa-heart"></i></a>
             </div>
 
-            <div class="player-music-control-buttons">
+            <div class="player-music-control">
+
+                    <ul class="player-music-control-buttons">
+
+                        <li class="player-music-control-buttons-item">
+                            <button class="player-music-control-buttons-link">
+                                <span class="material-icons">shuffle</span>
+                            </button>
+                        </li>
+
+                        <li class="player-music-control-buttons-item">
+                            <button class="player-music-control-buttons-link">
+                                <span class="material-icons">skip_previous</span>
+                            </button>
+                        </li>
+
+                        <li class="player-music-control-buttons-item">
+                            <button class="player-music-control-buttons-link bigger-icon">
+                                <span class="material-icons">play_circle</span>
+                                <span class="material-icons">pause_circle</span>
+                            </button>
+                        </li>
+
+                        <li class="player-music-control-buttons-item">
+                            <button class="player-music-control-buttons-link">
+                                <span class="material-icons">skip_next</span>
+                            </button>
+                        </li>
+
+                        <li class="player-music-control-buttons-item">
+                            <button class="player-music-control-buttons-link">
+                                <span class="material-icons">repeat</span>
+                            </button>
+                        </li>
+                    </ul>
+
+                <div class="player-music-control-timer">
+                    <span>1:22</span>
+                    <div class="timer"></div>
+                    <span>2:40</span>
+                </div>
 
             </div>
 
             <div class="player-page-control-buttons">
+
+                <li class="player-page-control-buttons-item">
+                    <button class="player-page-control-buttons-link">
+                        <i class="icon-loop"></i>
+                    </button>
+                </li>
+
+                <li class="player-page-control-buttons-item">
+                    <button class="player-page-control-buttons-link">
+                        <i class="icon-loop"></i>
+                    </button>
+                </li>
+
+                <div class="player-control-volume">
+                    <div class="timer"></div>
+                </div>
 
             </div>
 

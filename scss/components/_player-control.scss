@@ -1,0 +1,74 @@
+.player-music-control{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &-buttons{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        list-style: none;
+        align-items: center;
+
+        &-item{
+            padding: 0 .8rem;
+        }
+
+        &-link{
+            text-decoration: none;
+            color: color(white-light);
+            @include flexPosition;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+
+            span{
+                font-size: 2rem;
+            }
+
+            &:hover{
+                color: color(white-dark);
+            }
+        }
+
+        .bigger-icon span{
+            font-size: 4rem;
+
+            &:nth-child(1){
+                display: none;
+            }
+        }
+    }
+
+    &-timer{
+        @include flexPosition;
+        width: 100%;
+        margin-bottom: .5rem;
+        color: color(white-light);
+
+        .timer{
+            width: 65%;
+            height: .4rem;
+            background-color: rgba(255,255,255,.4);
+            margin: 0 1rem;
+            position: relative;
+            border-radius: 2px;
+
+            &:after{
+                position: absolute;
+                content: "";
+                width: 20%;
+                height: .4rem;
+                background-color: color(white-light);
+                border-radius: 2px;
+            }
+        }
+
+        span{
+            font-size: 1.2rem;
+        }
+
+
+    }
+
+}
