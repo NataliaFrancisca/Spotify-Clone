@@ -24,9 +24,8 @@
         @include flexPosition(flex-start);
     }
 
-    &-page-control-buttons{
+    &-page-control{
         grid-area: page-buttons-control;
-        background-color: blue;
     }
 }
 
