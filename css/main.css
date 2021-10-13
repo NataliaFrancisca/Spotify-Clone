@@ -289,66 +289,14 @@ main {
       padding: 0 .5rem; }
     .player-page-control-buttons-link {
       background-color: transparent;
-      border: none; }
+      border: none;
+      cursor: pointer; }
   .player-page-control-timer {
     margin-left: .5rem;
     display: flex;
-    align-items: center;
-    /* Input Thumb */ }
+    align-items: center; }
     .player-page-control-timer span {
       padding: 0 .5rem; }
-    .player-page-control-timer input[type="range"] {
-      -webkit-appearance: none;
-      margin-right: .4rem;
-      width: 120px;
-      height: 4px;
-      background-color: rgba(255, 255, 255, 0.4);
-      border-radius: 2px;
-      background-image: rgba(255, 255, 255, 0.6);
-      background-size: 0% 100%;
-      background-repeat: no-repeat; }
-    .player-page-control-timer input[type="range"]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      display: none;
-      height: 8px;
-      width: 8px;
-      border-radius: 50%;
-      background: white;
-      cursor: pointer;
-      transition: background .3s ease-in-out; }
-    .player-page-control-timer input[type="range"]::-moz-range-thumb {
-      -webkit-appearance: none;
-      height: 8px;
-      width: 8px;
-      border-radius: 50%;
-      background: white;
-      cursor: pointer;
-      transition: background .3s ease-in-out;
-      visibility: hidden; }
-    .player-page-control-timer input[type="range"]::-ms-thumb {
-      -webkit-appearance: none;
-      height: 8px;
-      width: 8px;
-      border-radius: 50%;
-      background: white;
-      cursor: pointer;
-      transition: background .3s ease-in-out; }
-    .player-page-control-timer input[type=range]::-webkit-slider-runnable-track {
-      -webkit-appearance: none;
-      box-shadow: none;
-      border: none;
-      background: transparent; }
-    .player-page-control-timer input[type=range]::-moz-range-track {
-      -webkit-appearance: none;
-      box-shadow: none;
-      border: none;
-      background: transparent; }
-    .player-page-control-timer input[type="range"]::-ms-track {
-      -webkit-appearance: none;
-      box-shadow: none;
-      border: none;
-      background: transparent; }
-    .player-page-control-timer input[type=range]:focus {
-      background-color: red; }
-    .player-page-control-timer input[type=range]:focus::-moz-range-track {
-      visibility: visible; }
+    .player-page-control-timer input {
+      height: .5rem;
+      width: 100px; }
