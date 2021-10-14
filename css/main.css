@@ -275,28 +275,37 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
-  .player-page-control span {
-    font-size: 2rem;
-    color: rgba(255, 255, 255, 0.6); }
   .player-page-control-buttons {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     width: 100%;
-    padding-right: 1.5rem; }
-    .player-page-control-buttons-item {
-      list-style: none;
-      padding: 0 .5rem; }
-    .player-page-control-buttons-link {
-      background-color: transparent;
-      border: none;
-      cursor: pointer; }
-  .player-page-control-timer {
-    margin-left: .5rem;
-    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    list-style: none;
     align-items: center; }
-    .player-page-control-timer span {
-      padding: 0 .5rem; }
-    .player-page-control-timer input {
-      height: .5rem;
-      width: 100px; }
+    .player-page-control-buttons-item {
+      padding: 0 .6rem; }
+    .player-page-control-buttons-link {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: transparent;
+      cursor: pointer; }
+      .player-page-control-buttons-link span {
+        font-size: 2rem; }
+      .player-page-control-buttons-link:hover {
+        color: white; }
+    .player-page-control-buttons-timer {
+      margin-left: .5rem;
+      display: flex;
+      align-items: center; }
+      .player-page-control-buttons-timer-icon {
+        padding: 0 .5rem;
+        color: rgba(255, 255, 255, 0.6); }
+        .player-page-control-buttons-timer-icon:hover {
+          color: white; }
+      .player-page-control-buttons-timer-volume-control {
+        height: .5rem;
+        width: 100px; }

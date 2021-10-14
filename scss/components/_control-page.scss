@@ -1,42 +1,53 @@
 .player-page-control{
     @include flexPosition(flex-start);
-   
-    span{
-        font-size: 2rem;
-        color: color(white-light);
-    }
 
     &-buttons{
-        @include flexPosition(flex-end);
+        display: flex;
         width: 100%;
-        padding-right: 1.5rem;
+        justify-content: flex-end;
+        padding-right: 1rem;
+        list-style: none;
+        align-items: center;
 
         &-item{
-            list-style: none;
-            padding: 0 .5rem;
-
+            padding: 0 .6rem;
         }
 
         &-link{
-            background-color: transparent;
+            text-decoration: none;
+            color: color(white-light);
+            @include flexPosition;
             border: none;
+            background-color: transparent;
             cursor: pointer;
-        }
-    }
 
-    &-timer{
-        margin-left: .5rem;
-        display: flex;
-        align-items: center;
+            span{
+                font-size: 2rem;
+            }
 
-        span{
-            padding: 0 .5rem;
+            &:hover{
+                color: color(white-dark);
+            }
         }
 
-        input{
-            height: .5rem;
-            width: 100px;
+        &-timer{
+            margin-left: .5rem;
+            display: flex;
+            align-items: center;
+
+            &-icon{
+                padding: 0 .5rem;
+                color: color(white-light);
+
+                &:hover{
+                    color: color(white-dark);
+                }
+            }
+
+            &-volume-control{
+                height: .5rem;
+                width: 100px;
+            } 
         }
-          
     }
 }
