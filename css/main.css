@@ -17,7 +17,10 @@ main {
   height: 100%;
   width: 100%;
   grid-area: catalog;
-  background-color: green; }
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .menu {
   height: 100%;
@@ -309,3 +312,68 @@ main {
       .player-page-control-buttons-timer-volume-control {
         height: .5rem;
         width: 100px; }
+
+.navbar {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../images/capa-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  align-self: flex-start;
+  position: relative; }
+  .navbar-catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute; }
+    .navbar-catalog-buttons-navegation {
+      width: 500%;
+      display: flex;
+      height: 100%;
+      list-style: none;
+      padding-left: 2rem; }
+      .navbar-catalog-buttons-navegation-item {
+        padding: 1rem; }
+      .navbar-catalog-buttons-navegation-button {
+        background-color: transparent;
+        border: none;
+        color: white; }
+    .navbar-catalog-more {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      padding-right: 1rem;
+      justify-content: flex-end; }
+      .navbar-catalog-more-item {
+        width: 160px;
+        padding: 1rem 0 1rem 0;
+        list-style: none;
+        color: white;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .navbar-catalog-more-button {
+        width: 150px;
+        height: 30px;
+        background-color: transparent;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        border: solid rgba(255, 255, 255, 0.6) 0.1rem;
+        color: white; }
+      .navbar-catalog-more-image-circle {
+        clip-path: circle(20%);
+        background-color: red;
+        height: 100%;
+        width: 50%; }
+
+.user-options {
+  justify-content: flex-start; }
