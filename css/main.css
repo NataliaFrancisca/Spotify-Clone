@@ -17,7 +17,7 @@ main {
   height: 100%;
   width: 100%;
   grid-area: catalog;
-  background-color: black;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -345,16 +345,18 @@ main {
       .navbar-catalog-buttons-navegation-button {
         background-color: transparent;
         border: none;
-        color: white; }
+        color: rgba(255, 255, 255, 0.6);
+        cursor: pointer; }
+        .navbar-catalog-buttons-navegation-button.check {
+          color: white; }
     .navbar-catalog-more {
       width: 50%;
       height: 100%;
       display: flex;
-      padding-right: 1rem;
       justify-content: flex-end; }
       .navbar-catalog-more-item {
-        width: 160px;
-        padding: 1rem 0 1rem 0;
+        width: 180px;
+        margin-top: 1rem;
         list-style: none;
         color: white;
         height: 30px;
@@ -362,18 +364,83 @@ main {
         justify-content: center;
         align-items: center; }
       .navbar-catalog-more-button {
-        width: 150px;
+        width: 170px;
         height: 30px;
         background-color: transparent;
         -moz-border-radius: 20px;
         border-radius: 20px;
         border: solid rgba(255, 255, 255, 0.6) 0.1rem;
-        color: white; }
-      .navbar-catalog-more-image-circle {
-        clip-path: circle(20%);
-        background-color: red;
-        height: 100%;
-        width: 50%; }
+        color: white;
+        font-size: 1rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 550;
+        letter-spacing: 2px;
+        transition: transform .2s; }
+        .navbar-catalog-more-button:hover {
+          transform: scale(1.1); }
 
 .user-options {
-  justify-content: flex-start; }
+  margin-left: 2rem;
+  width: max-content;
+  justify-content: flex-start;
+  border-radius: 20px;
+  cursor: pointer; }
+  .user-options-image {
+    height: 30px;
+    width: 30px;
+    background-color: orange;
+    border-radius: 50%; }
+  .user-options-name {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 550;
+    letter-spacing: 1.2px; }
+    .user-options-name:after {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f0d7';
+      font-weight: bold;
+      padding-left: 1rem;
+      font-size: 1.4rem;
+      padding-right: 1rem; }
+  .user-options:hover {
+    background-color: rgba(85, 84, 84, 0.5); }
+
+.container-details {
+  width: 100%;
+  height: 65%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  font-family: 'Lato', sans-serif;
+  color: white; }
+  .container-details-playlist {
+    width: 90%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start; }
+    .container-details-playlist-verifided {
+      font-size: 1.2rem;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 550;
+      font-weight: 400;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      color: white; }
+      .container-details-playlist-verifided .material-icons {
+        color: #2e77d0;
+        padding-right: .5rem; }
+    .container-details-playlist-title {
+      font-size: 8rem;
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900; }
+    .container-details-playlist-subtitle {
+      font-size: 1.5rem;
+      font-weight: 500; }
