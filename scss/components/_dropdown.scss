@@ -1,0 +1,43 @@
+.dropdown{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(85, 84, 84);
+    border-radius: 4px;
+
+    top: 4rem;
+    height: auto;
+    width: inherit;
+    min-width: 1rem;
+    padding: 0rem;
+
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    
+    margin-right: 2rem;
+
+    transition: all 0.5s ease;
+}
+
+.dropdown-item{
+    list-style: none;
+    height: 80%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(220,220,220);
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
